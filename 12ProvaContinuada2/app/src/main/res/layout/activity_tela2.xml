@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela2">
+
+    <EditText
+        android:id="@+id/et_raca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Raça do Cachorro"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_precoMedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Preço Médio desta Raça"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/et_raca"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+        android:id="@+id/sw_crianca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indicado para crianças"
+        app:layout_constraintTop_toBottomOf="@id/et_precoMedio"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt_cadastrarCachorro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/sw_crianca"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cachorro_feliz"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/bt_cadastrarCachorro"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_foto"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
